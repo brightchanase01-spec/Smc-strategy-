@@ -16,8 +16,8 @@ def run_server():
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)))
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN = "8674181234:AAFb0XXInv0MIZXPZTWHp1LoEdAiDfyhDD8"
-TELEGRAM_CHAT_ID = "1655470981"
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_ BOT_ TOKEN')
+TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_ CHAT_ ID')
 
 exchange = ccxt.binance({'enableRateLimit': True})
 
