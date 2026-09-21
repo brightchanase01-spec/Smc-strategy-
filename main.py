@@ -73,3 +73,4 @@ def scanner_loop():
 if __name__ == "__main__":
     threading.Thread(target=scanner_loop, daemon=True).start()
     run_server()
+send_telegram_alert("✅ SMC Scanner is ONLINE")
