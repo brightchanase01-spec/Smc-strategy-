@@ -62,7 +62,7 @@ def check_market_structure():
             time.sleep(1)
 
 def scanner_loop():
-    send_telegram_alert("🟢 *SMC 15m SCANNER IS LIVE*\n\nStatus: Active & Monitoring 50 Pairs\nTarget: 15m Institutional Activity")
+    send_telegram_alert("🟢 SMC 15m SCANNER IS LIVE*\n\nStatus: Active & Monitoring 50 Pairs\nTarget: 15m Institutional Activity")
     while True:
         try:
             check_market_structure()
